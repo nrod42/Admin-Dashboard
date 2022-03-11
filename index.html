@@ -6,84 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>  
-    <header>
-        <div class="navTop">
-            <div class="search">
-                <img class="searchBut" src="./img/search.svg"><input type="text">
-            </div>
-            <p >Morgan Oakley</p>
+    <header class="nav">
+        <div class="search">
+            <img class="searchBut" src="./img/search.svg">
+            <input type="text">
         </div>
-        <div class="navBot">
-            <div class="username">
-                <p>Morgan Stanley (@morgan)</p>
-            </div>
-            <div class="postButtons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
+        <div class="userArea">
+            <img class="bellLogo" src="./img/bell.svg">
+            <img class="profilePic" src="./img/profile-pic.svg">
+            <p>Morgan Oakley</p>
+        </div>
+        <div class="username">
+            <img class="profilePic" src="./img/profile-pic.svg">
+            <p>Hi there,</p>
+            <p>Morgan Stanley (@morgan)</p>
+        </div>
+        <div class="postButtons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
         </div>
     </header>
     <div class="sidebar">
-        <p class="logo">Dashboard</p>
+        <p class="logo"><img class="sidebarLogo" src="./img/dashboard-logo.svg">Dashboard</p>
         <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <li><img class="sidebarLogo" src="./img/home.svg"><a href="">Home</a></li>
+            <li><img class="sidebarLogo" src="./img/profile.svg"><a href="">Profile</a></li>
+            <li><img class="sidebarLogo" src="./img/messages.svg"><a href="">Messages</a></li>
+            <li><img class="sidebarLogo" src="./img/time.svg"><a href="">History</a></li>
+            <li><img class="sidebarLogo" src="./img/tasks.svg"><a href="">Tasks</a></li>
+            <li><img class="sidebarLogo" src="./img/communities.svg"><a href="">Communities</a></li>
         </ul>
         <ul>
-            <li>Setting</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><img class="sidebarLogo" src="./img/settings.svg"><a href="">Settings</a></li>
+            <li><img class="sidebarLogo" src="./img/support.svg"><a href="">Support</a></li>
+            <li><img class="sidebarLogo" src="./img/privacy.svg"><a href="">Privacy</a></li>
         </ul>
     </div>
     <div class="mainContent">
         <div class="projects">
+            <h3 class="projectsTitle">Your Projects</h3>
             <div class="projectCard">
-                <h3>Super Cool Project</h3>
-                <p>Sed tempusut lactus</p>
+                <h4>Super Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="projectCard">
-                <h3>Super Cool Project</h3>
-                <p>Sed tempusut lactus</p>
+                <h4>Super Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="projectCard">
-                <h3>Super Cool Project</h3>
-                <p>Sed tempusut lactus</p>
+                <h4>Super Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="projectCard">
-                <h3>Super Cool Project</h3>
-                <p>Sed tempusut lactus</p>
+                <h4>Super Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="projectCard">
-                <h3>Super Cool Project</h3>
-                <p>Sed tempusut lactus</p>
+                <h4>Super Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="projectCard">
-                <h3>Super Cool Project</h3>
-                <p>Sed tempusut lactus</p>
+                <h4>Super Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
-        <div class="announcements">
-            <div>
-                <h4>Super Cool Project</h4>
-                <p>Sed tempusut lactus</p>
+        <div class="sideContent">
+            <h3>Announcements</h3>
+            <div class="announcements">
+                <div>
+                    <h5>Super Cool Project</h5>
+                    <p>Sed tempusut lactus</p>
+                </div>
+                <div>
+                    <h5>Super Cool Project</h5>
+                    <p>Sed tempusut lactus</p>
+                </div>
+                <div>
+                    <h5>Super Cool Project</h5>
+                    <p>Sed tempusut lactus</p>
+                </div>
             </div>
-            <div>
-                <h4>Super Cool Project</h4>
-                <p>Sed tempusut lactus</p>
-            </div>
-            <div>
-                <h4>Super Cool Project</h4>
-                <p>Sed tempusut lactus</p>
+            <h3>Trending</h3>
+            <div class="trending">
+                <img class="profilePic" src="./img/profile-pic.svg">
+                <img class="profilePic" src="./img/profile-pic.svg">
+                <img class="profilePic" src="./img/profile-pic.svg">
             </div>
         </div>
-        <div class="trending"></div>
         </div>
     </div>
 </body>
