@@ -12,15 +12,15 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
     margin: 0px;
 }
 
 .nav {
-    margin: 0 40px 0 40px;
+    margin: 10px 40px 0 40px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1.25fr;
+    grid-template-rows: 1fr 2fr;
     box-shadow: 0px 5px black;
 }
 
@@ -28,7 +28,7 @@ body {
     align-items: center;
     justify-items: start;
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 45px 1fr;
 }
 
 .searchBut {
@@ -36,19 +36,36 @@ body {
 }
 
 .search input{
-    height: 50%;
+    height: 60%;
     width: 100%;
-    border: 1px solid;
+    border: none;
     border-radius: 50px;
-    background-color: lightgray;   
+    background-color: rgba(186, 206, 212, 0.979);
+    padding: 0px 20px;  
 }
 
 .userArea {
     justify-self: end;
+    align-self: center;
     display: grid;
     grid-template-columns: 50px 50px 130px;
     align-items: center;
     justify-items: end;
+}
+
+.userArea p{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.userArea .bellLogo{
+    justify-self: center;
+}
+
+.userArea .profilePic{
+    width: auto;
+    height: 45px;
 }
 
 .username{
@@ -61,38 +78,44 @@ body {
 
 .username img {
     width: auto;
-    height: 50px;
+    height: 60px;
     grid-row: 1 / span 2;
     place-self: center;
 }
 
 .username p {
     margin: 0;
-    padding-left: 10px;
+    padding-left: 20px;
     font-weight: bold;
+    font-size: 0.9rem;
+    align-self: end;
+}
+
+.username p:last-child {
+    font-size: 1.3rem;
+    align-self: start;
 }
 
 .postButtons {
-    align-self: center;
     justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-items: end;
+    align-items: center;
 }
 
-.nav button {
-    width: 80px;
-    height: 35px;
-    font-size: 0.85rem;
-    color: white;
-    font-weight: bold;
+.postButtons button {
     background-color: rgb(28, 174, 241);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
     border: none;
-    padding: 5px;
-    margin: 10px;
     border-radius: 50px;
+    width: 90px;
+    height: 35px;
+    padding: 5px;
     cursor: pointer;
-}
-
-.nav button:last-child{
-    margin-right: 0;
 }
 
 .sidebar {
@@ -104,10 +127,16 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    margin: 20px 45px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
+
+.sidebarLogo {
+    padding-right: 15px;
+}
+
 
 p .sidebarLogo {
     width: auto;
@@ -135,13 +164,9 @@ a:visited{
     color: white;
 }
 
-.sidebarLogo {
-    padding-right: 15px;
-}
-
 .mainContent {
     height: 100%;
-    padding: 0 20px 50px 20px;
+    padding: 0 25px 50px 25px;
     display: grid;
     gap: 20px;
     grid-template-columns: 3fr 1fr;
@@ -152,6 +177,7 @@ a:visited{
 h3 {
     margin: 0;
     align-self: end;
+    font-size: 1.1rem;
 }
 
 .projectsTitle {
@@ -168,12 +194,21 @@ h3 {
 }
 
 .projectCard {
-    border: 1px black solid;
-    border-left-width: 7px;
-    border-left-color: gold;
+    border-left: 7px solid gold;
     border-radius: 5px;
     padding: 15px;
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 40px;
+}
+
+.projectCard .projectCardButs {
+    justify-self: end;
+    align-self: center;
+}
+
+.projectCardButs img{
+    margin: 0 10px;
 }
 
 .sideContent {
@@ -184,31 +219,61 @@ h3 {
 }
 
 .announcements {
-    padding: 20px;
-    border: 1px black solid;
-    border-radius: 5px;
-    background-color: white;
-}
-
-.announcements h5 {
-    
-}
-
-.announcements p {
-    border-bottom: 1px solid lightgray;
-    
-}
-
-.trending {
-    padding: 20px;
-    border: 1px black solid;
+    padding: 25px;
     border-radius: 5px;
     background-color: white;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.announcementSection {
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.announcementSection:last-child {
+    border: none;
+}
+.announcements .announcementTitle {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.announcements p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.trending {
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 55px 1fr;
     align-items: center;
 }
 
 .trending img {
     width: auto;
-    height: 50px;
+    height: 45px;
+    grid-row: span 2;
+    justify-self: start;
+}
+
+.trending p {
+    grid-column: 2 / 3;
+    margin: 0;
+}
+
+.trending .profileHandle {
+    align-self: end;
+    font-weight: bold;
+}
+
+.trending .profileTitle {
+    align-self: start;
 }
